@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="Ninbora.Addons"
+       name="Ninbora Feeders"
+       version="1.0.25"
+       provider-name="Ninbora Development Team">
+  <extension point="xbmc.addon.repository" name="Ninbora_Feeders">
+    <info compressed="false">https://raw.githubusercontent.com/ninbora/repo/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/ninbora/repo/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/ninbora/repo/master</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <minversion>1</minversion>
+    <platform>all</platform>
+    <summary lang="en">Ninbora Feeders Repository</summary>
+    <description lang="en">Feeders from Ninbora</description>
+  </extension>
+</addon>
+
+<addon id="Ninbora.Movies_Feeder" name="Ninbora.Movies_Feeder" version="1.0.8" provider-name="Ninbora">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Feed movies to Kodi from several sources</summary>
+    <summary lang="he">מזין סרטים לקודי ממספר ממקורות</summary>
+    <website>https://www.github.com/ninbora</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="Ninbora.Series_Feeder" name="Ninbora.Series_Feeder" version="1.0.8" provider-name="Ninbora">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Feed series to Kodi from several sources</summary>
+    <summary lang="he">מזין סדרות לקודי ממספר מקורוצ</summary>
+    <website>https://www.github.com/ninbora</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
